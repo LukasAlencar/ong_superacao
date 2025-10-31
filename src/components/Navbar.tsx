@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Heart, Menu, X, Facebook, Instagram, MessageCircle } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Menu, X, Facebook, Instagram, MessageCircle } from 'lucide-react';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
