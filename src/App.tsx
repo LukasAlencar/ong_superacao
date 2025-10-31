@@ -1,17 +1,15 @@
-import { Target, Briefcase, MapPin, Phone, Instagram } from 'lucide-react';
+import { Target, Briefcase, MapPin, Phone, Instagram, Heart } from 'lucide-react';
+import Navbar from './components/Navbar';
 
 const LandingPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-white">
+      <Navbar />
       {/* Hero Section */}
-      <header className="container mx-auto px-6 py-16 text-center">
-        <div className="max-w-4xl mx-auto">
+      <header id='hero' className="container mx-auto px-6 py-16 text-center">
+        <div className="max-w-4xl mx-auto mt-20">
           <div className="mb-8">
-            <img
-              src="/logo.png"
-              alt="Logo ONG Superação"
-              className="w-48 h-48 mx-auto object-contain"
-            />
+            <Heart className="w-20 h-20 mx-auto text-purple-500 mb-6" />
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
             A ONG Superação acredita que o amor transforma vidas
@@ -19,12 +17,12 @@ const LandingPage = () => {
           <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
             Quando olhamos com empatia para as diferenças, criamos inclusão, esperança e futuro.
           </p>
-          
+
         </div>
       </header>
 
       {/* About Section */}
-      <section className="bg-white py-16">
+      <section id='about' className="bg-white py-16">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">Quem Somos</h2>
@@ -53,7 +51,7 @@ const LandingPage = () => {
       </section>
 
       {/* Stories Section */}
-      <section className="bg-gradient-to-r from-blue-100 to-purple-100 py-16">
+      <section id='stories' className="bg-gradient-to-r from-blue-100 to-purple-100 py-16">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl font-bold text-gray-800 mb-8 text-center">Histórias que Inspiram</h2>
@@ -138,7 +136,7 @@ const LandingPage = () => {
       </section>
 
       {/* What We Do Section */}
-      <section className="bg-white py-16">
+      <section id='what-we-do' className="bg-white py-16">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-8">
@@ -179,7 +177,7 @@ const LandingPage = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="bg-white py-16">
+      <section id='contact' className="bg-white py-16">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Faça Parte Dessa Transformação</h2>
